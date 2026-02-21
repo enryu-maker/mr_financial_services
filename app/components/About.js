@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function About() {
     return (
-        <section id="about" className="py-20 bg-surface-warm relative overflow-hidden">
+        <section id="about" className="py-20 bg-surface-warm relative overflow-hidden scroll-mt-20">
             <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
 

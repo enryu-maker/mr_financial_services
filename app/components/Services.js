@@ -44,7 +44,7 @@ export default function Services() {
     ];
 
     return (
-        <section id="services" className="py-20 bg-surface-cool">
+        <section id="services" className="py-20 bg-surface-cool scroll-mt-20">
             <div className="container mx-auto px-6">
                 <SectionHeading
                     title="Our Comprehensive"

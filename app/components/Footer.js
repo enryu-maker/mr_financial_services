@@ -9,9 +9,9 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="space-y-4">
                         <div className="flex items-center gap-2">
-                             <Link href="/" className="flex items-center gap-2 group">
-                    <img src="/assets/MR_LOGO.png" alt="Logo" className="w-24" />
-                </Link>
+                            <Link href="/" className="flex items-center gap-2 group">
+                                <img src="/assets/MR_LOGO.png" alt="Logo" className="w-24" />
+                            </Link>
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Empowering your financial future with expert consultancy for loans, real estate, and tax compliance.
@@ -62,7 +62,7 @@ export default function Footer() {
                 <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
                     <p>© {new Date().getFullYear()} M.R. Financial Services. All rights reserved.</p>
                     <div className="flex items-center gap-4">
-                        <span className="hover:text-white cursor-pointer">Made with ❤️ by NerdTech</span>
+                        <Link href="https://nerdtech.in" target="_blank" className="hover:text-white cursor-pointer">Made with ❤️ by NerdTech</Link>
                     </div>
                 </div>
             </div>

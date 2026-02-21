@@ -13,7 +13,7 @@ export default function Partners() {
     ];
 
     return (
-        <section id="partners" className="py-20 bg-white">
+        <section id="partners" className="py-20 bg-white scroll-mt-20">
             <div className="container mx-auto px-6 text-center">
                 <h3 className="text-secondary font-bold tracking-widest uppercase text-sm mb-12">
                     Our Authorized Banking Partners

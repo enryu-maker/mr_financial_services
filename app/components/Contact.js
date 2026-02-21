@@ -37,7 +37,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-20 bg-surface-cool relative">
+        <section id="contact" className="py-20 bg-surface-cool relative scroll-mt-20">
             <div className="container mx-auto px-6">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
 
@@ -125,7 +125,7 @@ export default function Contact() {
                     {/* Right - Map Information */}
                     <div className="space-y-8">
                         {/* Map Card */}
-                        <div className="relative h-[300px] lg:h-[300px] w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200 group">
+                        <div className="relative h-[300px] lg:h-[400px] w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200 group">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119981.39107472458!2d73.72107892285584!3d19.990944013098268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddd290b09914b3%3A0xcb07845d9d28215c!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1771500641613!5m2!1sen!2sin"
                                 className="w-full h-full"
@@ -137,7 +137,7 @@ export default function Contact() {
                         </div>
 
                         {/* Contact Actions */}
-                        <div className="grid grid-cols-1 gap-4">
+                        {/* <div className="grid grid-cols-1 gap-4">
                             <a href="tel:+919326447847" className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-colors">
                                 <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
                                     <Phone className="w-5 h-5" />
@@ -157,7 +157,7 @@ export default function Contact() {
                                     <p className="font-bold text-gray-900">+91 73879 24783</p>
                                 </div>
                             </a>
-                        </div>
+                        </div> */}
 
                         <div className="flex items-start gap-4 p-4 bg-amber-50 rounded-xl border border-amber-100">
                             <MapPin className="w-5 h-5 text-secondary mt-1 shrink-0" />
