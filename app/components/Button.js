@@ -21,14 +21,23 @@ export default function Button({
 
     if (href) {
         return (
-            <Link href={href} className={combinedClassName} {...props}>
+            <Link
+                href={href}
+                style={{ fontFamily: "var(--font-roboto)" }}
+                className={combinedClassName}
+                {...props}
+            >
                 {children}
             </Link>
         );
     }
 
     return (
-        <button className={combinedClassName} {...props}>
+        <button
+            style={{ fontFamily: "var(--font-roboto)" }}
+            className={combinedClassName}
+            {...props}
+        >
             {children}
         </button>
     );

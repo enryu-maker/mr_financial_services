@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Landmark, Building2, Calculator, Home, Briefcase, Car, Shield, FileText, CheckCircle2 } from "lucide-react";
+import { Landmark, Building2, Calculator, Home, Briefcase, Car, Shield, FileText, CheckCircle2, Droplet, Cable, LandPlot, BadgePlus } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
 export default function Services() {
@@ -10,6 +10,7 @@ export default function Services() {
             icon: <Landmark className="w-6 h-6 text-primary" />,
             items: [
                 { label: "Home & Mortgage Loans", icon: <Home className="w-4 h-4" /> },
+                { label: "Tin shed property", icon: <Home className="w-4 h-4" /> },
                 { label: "Business & Car Loans", icon: <Briefcase className="w-4 h-4" /> },
                 { label: "Education Loans", icon: <Briefcase className="w-4 h-4" /> },
                 { label: "Personal Loans", icon: <Shield className="w-4 h-4" /> },
@@ -40,19 +41,34 @@ export default function Services() {
             ],
             bg: "bg-gray-50/50",
             accent: "text-gray-700"
-        }
+        },
+        {
+            title: "Property & Utility Services",
+            description: "Complete assistance for property tax, water bills, electricity connections, land records (7/12), and other municipal documentation services.",
+            icon: <Landmark className="w-6 h-6 text-primary" />,
+            items: [
+
+                { label: "Ghar Patti", icon: <Home className="w-4 h-4" /> },
+                { label: "Pani Patti", icon: <Droplet className="w-4 h-4" /> },
+                { label: "New Water Connection", icon: <BadgePlus className="w-4 h-4" /> },
+                { label: "New Electricity", icon: <Cable className="w-4 h-4" /> },
+                { label: "7/12", icon: <LandPlot className="w-4 h-4" /> },
+            ],
+            bg: "bg-blue-50/50",
+            accent: "text-primary"
+        },
     ];
 
     return (
         <section id="services" className="py-20 bg-surface-cool scroll-mt-20">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-6 lg:px-24">
                 <SectionHeading
                     title="Our Comprehensive"
                     highlight="Expertise"
                     subtitle="Tailored financial solutions designed to meet the unique challenges of the modern marketplace."
                 />
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
                     {services.map((service, index) => (
                         <div
                             key={index}
@@ -63,11 +79,15 @@ export default function Services() {
                                 {service.icon}
                             </div>
 
-                            <h3 className="text-2xl font-serif font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                            <h3
+                                style={{ fontFamily: "var(--font-roboto)" }}
+                                className="text-2xl font-sans font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
                                 {service.title}
                             </h3>
 
-                            <p className="text-gray-600 text-sm leading-relaxed mb-8 min-h-[60px]">
+                            <p
+                                style={{ fontFamily: "var(--font-roboto)" }}
+                                className="text-gray-600 text-sm leading-relaxed mb-8 min-h-[60px]">
                                 {service.description}
                             </p>
 
@@ -75,7 +95,9 @@ export default function Services() {
                                 {service.items.map((item, idx) => (
                                     <div key={idx} className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 group-hover:bg-gray-100/80 transition-colors">
                                         <span className={`${service.accent}`}>{item.icon}</span>
-                                        <span className="text-sm font-medium text-gray-700">{item.label}</span>
+                                        <span
+                                            style={{ fontFamily: "var(--font-roboto)" }}
+                                            className="text-sm font-medium text-gray-700">{item.label}</span>
                                     </div>
                                 ))}
                             </div>

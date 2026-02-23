@@ -25,7 +25,7 @@ export default function Contact() {
         const text = `*New Consultation Request*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Service:* ${formData.service}%0A*Message:* ${formData.message}`;
 
         // WhatsApp URL (Targeting Rafique's number)
-        const whatsappUrl = `https://wa.me/xxxx?text=${text}`;
+        const whatsappUrl = `https://wa.me/93264 47847?text=${text}`;
 
         // Simulate a small delay for UX then redirect
         setTimeout(() => {
@@ -43,17 +43,23 @@ export default function Contact() {
 
                     {/* Left - Form */}
                     <div className="bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100">
-                        <h2 className="text-3xl font-serif font-bold text-gray-900 mb-2">
+                        <h2
+                            style={{ fontFamily: "var(--font-roboto)" }}
+                            className="text-3xl font-sans font-bold text-gray-900 mb-2">
                             Request a <span className="text-primary italic">Consultation</span>
                         </h2>
-                        <p className="text-gray-600 mb-8">
+                        <p
+                            style={{ fontFamily: "var(--font-roboto)" }}
+                            className="text-gray-600 mb-8">
                             Fill out the form below and our experts will reach out to you directly.
                         </p>
 
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-700">Full Name</label>
+                                    <label
+                                        style={{ fontFamily: "var(--font-roboto)" }}
+                                        className="text-sm font-medium text-gray-700">Full Name</label>
                                     <input
                                         name="name"
                                         type="text"
@@ -61,11 +67,14 @@ export default function Contact() {
                                         value={formData.name}
                                         onChange={handleChange}
                                         placeholder="John Doe"
+                                        style={{ fontFamily: "var(--font-roboto)" }}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                                     />
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-700">Phone Number</label>
+                                    <label
+                                        style={{ fontFamily: "var(--font-roboto)" }}
+                                        className="text-sm font-medium text-gray-700">Phone Number</label>
                                     <input
                                         name="phone"
                                         type="tel"
@@ -73,17 +82,21 @@ export default function Contact() {
                                         value={formData.phone}
                                         onChange={handleChange}
                                         placeholder="+91 00000 00000"
+                                        style={{ fontFamily: "var(--font-roboto)" }}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                                     />
                                 </div>
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-sm font-medium text-gray-700">Service Required</label>
+                                <label
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-sm font-medium text-gray-700">Service Required</label>
                                 <select
                                     name="service"
                                     value={formData.service}
                                     onChange={handleChange}
+                                    style={{ fontFamily: "var(--font-roboto)" }}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white"
                                 >
                                     <option>Home Loan</option>
@@ -98,13 +111,16 @@ export default function Contact() {
                             </div>
 
                             <div className="space-y-2">
-                                <label className="text-sm font-medium text-gray-700">Message</label>
+                                <label
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-sm font-medium text-gray-700">Message</label>
                                 <textarea
                                     name="message"
                                     rows="4"
                                     value={formData.message}
                                     onChange={handleChange}
                                     placeholder="How can we help you?"
+                                    style={{ fontFamily: "var(--font-roboto)" }}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
                                 ></textarea>
                             </div>
@@ -127,7 +143,8 @@ export default function Contact() {
                         {/* Map Card */}
                         <div className="relative h-[300px] lg:h-[400px] w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200 group">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119981.39107472458!2d73.72107892285584!3d19.990944013098268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddd290b09914b3%3A0xcb07845d9d28215c!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1771500641613!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3749.9374769852016!2d73.72515487522817!3d19.969131481428168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDU4JzA4LjkiTiA3M8KwNDMnMzkuOCJF!5e0!3m2!1sen!2sin!4v1771828808725!5m2!1sen!2sin"
+                                title="M.R. Financial Services Nashik Location"
                                 className="w-full h-full"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
@@ -162,8 +179,10 @@ export default function Contact() {
                         <div className="flex items-start gap-4 p-4 bg-amber-50 rounded-xl border border-amber-100">
                             <MapPin className="w-5 h-5 text-secondary mt-1 shrink-0" />
                             <div>
-                                <p className="text-sm text-gray-800 leading-relaxed">
-                                    <strong>Head Office:</strong> Chandreshwari Society Shop No. 1, Opp. Maruti Mandir, Near Dr. Fargade, Sanjiv Nagar, Ambad, Satpur, Nashik - 422010
+                                <p
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-sm text-gray-800 leading-relaxed">
+                                    <strong style={{ fontFamily: "var(--font-roboto)" }}>Head Office:</strong> Chandreshwari Society Shop No. 1, Opp. Maruti Mandir, Near Dr. Fargade, Sanjiv Nagar, Ambad, Satpur, Nashik - 422010
                                 </p>
                             </div>
                         </div>

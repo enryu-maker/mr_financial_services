@@ -16,13 +16,17 @@ export default function About() {
                             className="mb-6"
                         />
 
-                        <p className="text-gray-600 leading-relaxed">
+                        <p
+                            style={{ fontFamily: "var(--font-roboto)" }}
+                            className="text-gray-600 leading-relaxed">
                             Founded on the principles of integrity and professional excellence,
                             M.R. Financial Services has been the cornerstone of financial growth
-                            for hundreds of families and businesses in Nashik.
+                            for hundreds of families and businesses across Nashik, Maharashtra.
                         </p>
 
-                        <p className="text-gray-600 leading-relaxed">
+                        <p
+                            style={{ fontFamily: "var(--font-roboto)" }}
+                            className="text-gray-600 leading-relaxed">
                             Our team navigates the complexities of banking regulations, estate laws,
                             and tax codes so you can focus on what matters most — building your dreams.
                             With partnerships across all major banks, we ensure you get the best rates
@@ -32,12 +36,20 @@ export default function About() {
                         {/* Stats */}
                         <div className="flex gap-6 pt-4">
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex-1">
-                                <h3 className="text-4xl font-serif font-bold text-primary mb-1">15+</h3>
-                                <p className="text-xs text-gray-500 uppercase tracking-wider">Years Experience</p>
+                                <h3
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-4xl font-sans font-bold text-primary mb-1">15+</h3>
+                                <p
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-xs text-gray-500 uppercase tracking-wider">Years Experience</p>
                             </div>
                             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex-1">
-                                <h3 className="text-4xl font-serif font-bold text-primary mb-1">2k+</h3>
-                                <p className="text-xs text-gray-500 uppercase tracking-wider">Happy Clients</p>
+                                <h3
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-4xl font-sans font-bold text-primary mb-1">2k+</h3>
+                                <p
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-xs text-gray-500 uppercase tracking-wider">Happy Clients</p>
                             </div>
                         </div>
                     </div>
@@ -53,11 +65,15 @@ export default function About() {
                                 <Shield className="w-24 h-24 text-gray-50 opacity-50 absolute top-6 right-6" />
                             </div>
 
-                            <h3 className="text-2xl font-serif font-bold text-gray-900 mb-4">
+                            <h3
+                                style={{ fontFamily: "var(--font-roboto)" }}
+                                className="text-2xl font-sans font-bold text-gray-900 mb-4">
                                 The Trust Shield Guarantee
                             </h3>
 
-                            <p className="text-gray-600 text-sm mb-8 leading-relaxed">
+                            <p
+                                style={{ fontFamily: "var(--font-roboto)" }}
+                                className="text-gray-600 text-sm mb-8 leading-relaxed">
                                 Every application we handle is treated with the highest degree of confidentiality
                                 and strategic precision. We don't just process files; we build futures.
                             </p>
@@ -70,7 +86,9 @@ export default function About() {
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3">
                                         <CheckCircle className="w-5 h-5 text-secondary shrink-0" />
-                                        <span className="text-gray-700 font-medium">{item}</span>
+                                        <span
+                                            style={{ fontFamily: "var(--font-roboto)" }}
+                                            className="text-gray-700 font-medium">{item}</span>
                                     </li>
                                 ))}
                             </ul>

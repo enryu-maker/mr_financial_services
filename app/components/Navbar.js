@@ -19,13 +19,13 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-2"
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-2" : "bg-transparent py-2"
                 }`}
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
-                    <img src="/assets/MR_LOGO.png" alt="Logo" className="w-22" />
+                    <img src="/assets/MR_LOGO.png" alt="M.R. Financial Services Nashik Logo" className="w-22" />
                 </Link>
 
                 {/* Desktop Links */}
@@ -34,6 +34,7 @@ export default function Navbar() {
                         <Link
                             key={item}
                             href={`#${item.toLowerCase()}`}
+                            style={{ fontFamily: "var(--font-roboto)" }}
                             className="text-md font-medium text-gray-600 hover:text-primary transition-colors"
                         >
                             {item}
@@ -64,6 +65,7 @@ export default function Navbar() {
                         <Link
                             key={item}
                             href={`#${item.toLowerCase()}`}
+                            style={{ fontFamily: "var(--font-roboto)" }}
                             className="text-base font-medium text-gray-700 hover:text-primary"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >

@@ -43,10 +43,14 @@ export default function Testimonials() {
 
                             {/* Content */}
                             <div className="px-2">
-                                <h4 className="text-xl font-serif font-bold text-gray-900 mb-2">
+                                <h4
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-xl font-sans font-bold text-gray-900 mb-2">
                                     {item.name}
                                 </h4>
-                                <p className="text-gray-600 italic leading-relaxed text-sm">
+                                <p
+                                    style={{ fontFamily: "var(--font-roboto)" }}
+                                    className="text-gray-600 italic leading-relaxed text-sm">
                                     "{item.quote}"
                                 </p>
                             </div>

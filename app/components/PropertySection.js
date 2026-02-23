@@ -42,11 +42,15 @@ export default function PropertySection() {
                                 {item.icon}
                             </div>
 
-                            <h3 className="text-xl font-serif font-bold text-gray-900 mb-3">
+                            <h3
+                                style={{ fontFamily: "var(--font-roboto)" }}
+                                className="text-xl font-sans font-bold text-gray-900 mb-3">
                                 {item.title}
                             </h3>
 
-                            <p className="text-gray-600 leading-relaxed text-sm">
+                            <p
+                                style={{ fontFamily: "var(--font-roboto)" }}
+                                className="text-gray-600 leading-relaxed text-sm">
                                 {item.description}
                             </p>
                         </div>
