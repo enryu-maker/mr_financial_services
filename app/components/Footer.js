@@ -54,9 +54,9 @@ export default function Footer() {
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-secondary shrink-0" />
                                 <a
-                                    href="mailto:contact@mrfinancial.com"
+                                    href="mailto:mrfinancialservices095@gmail.com"
                                     style={{ fontFamily: "var(--font-roboto)" }}
-                                    className="hover:text-white transition-colors">contact@mrfinancial.com</a>
+                                    className="hover:text-white transition-colors">mrfinancialservices095@gmail.com</a>
                             </li>
                         </ul>
                     </div>

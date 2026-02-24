@@ -76,7 +76,7 @@ export default function Hero() {
             {/* Floating CTA Button */}
             <div className="fixed bottom-6 right-6  z-50 animate-pulse-soft rounded-full">
                 <Button
-                    href="https://wa.me/93264 47847"
+                    href="https://wa.me/+919326447847"
                     variant="white"
                     className="rounded-4xl border border-green-500 text-green-600 hover:bg-green-50"
                 >

@@ -68,7 +68,7 @@ export default function Contact() {
                                         onChange={handleChange}
                                         placeholder="John Doe"
                                         style={{ fontFamily: "var(--font-roboto)" }}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder-gray-400 text-gray-900"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -83,7 +83,7 @@ export default function Contact() {
                                         onChange={handleChange}
                                         placeholder="+91 00000 00000"
                                         style={{ fontFamily: "var(--font-roboto)" }}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder-gray-400 text-gray-900"
                                     />
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                                     value={formData.service}
                                     onChange={handleChange}
                                     style={{ fontFamily: "var(--font-roboto)" }}
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white"
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white placeholder-gray-400 text-gray-400"
                                 >
                                     <option>Home Loan</option>
                                     <option>Business Loan</option>
@@ -121,7 +121,7 @@ export default function Contact() {
                                     onChange={handleChange}
                                     placeholder="How can we help you?"
                                     style={{ fontFamily: "var(--font-roboto)" }}
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none placeholder-gray-400 text-gray-900"
                                 ></textarea>
                             </div>
 
