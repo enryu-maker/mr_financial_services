@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Landmark, Building2, Calculator, Home, Briefcase, Car, Shield, FileText, CheckCircle2, Droplet, Cable, LandPlot, BadgePlus } from "lucide-react";
+import { Landmark, Building2, Calculator, Home, Briefcase, Car, Shield, FileText, CheckCircle2, Droplet, Cable, LandPlot, BadgePlus, CarIcon, Wallet, ArrowLeftRight, RefreshCcw, Hammer, Map } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
 export default function Services() {
@@ -9,11 +9,14 @@ export default function Services() {
             description: "Comprehensive loan solutions tailored to your needs with quick processing and best interest rates.",
             icon: <Landmark className="w-6 h-6 text-primary" />,
             items: [
-                { label: "Home & Mortgage Loans", icon: <Home className="w-4 h-4" /> },
-                { label: "Tin shed property", icon: <Home className="w-4 h-4" /> },
-                { label: "Business & Car Loans", icon: <Briefcase className="w-4 h-4" /> },
-                { label: "Education Loans", icon: <Briefcase className="w-4 h-4" /> },
-                { label: "Personal Loans", icon: <Shield className="w-4 h-4" /> },
+                { label: "Home Loan (Resale/New) ", icon: <Home className="w-4 h-4" /> },
+                { label: "Tin shed property Loan", icon: <Home className="w-4 h-4" /> },
+                { label: "Business Loan", icon: <Briefcase className="w-4 h-4" /> },
+                { label: "Car Loan", icon: <CarIcon className="w-4 h-4" /> },
+                { label: "Education Loan", icon: <Briefcase className="w-4 h-4" /> },
+                { label: "Personal Loan", icon: <Shield className="w-4 h-4" /> },
+                { label: "Lap Loan", icon: <Wallet className="w-4 h-4" /> },
+                { label: "BT + Top Up Loan", icon: <ArrowLeftRight className="w-4 h-4" /> },
             ],
             bg: "bg-blue-50/50",
             accent: "text-primary"
@@ -26,6 +29,9 @@ export default function Services() {
                 { label: "Buy & Sell Property", icon: <Home className="w-4 h-4" /> },
                 { label: "Rental Services", icon: <Home className="w-4 h-4" /> },
                 { label: "Commercial Leasing", icon: <Building2 className="w-4 h-4" /> },
+                { label: "Home Refinance", icon: <RefreshCcw className="w-4 h-4" /> },
+                { label: "Home Construction", icon: <Hammer className="w-4 h-4" /> },
+                { label: "Plot Purchase & Construction", icon: <Map className="w-4 h-4" /> }
             ],
             bg: "bg-amber-50/50",
             accent: "text-secondary"

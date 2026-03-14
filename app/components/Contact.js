@@ -66,7 +66,7 @@ export default function Contact() {
                                         required
                                         value={formData.name}
                                         onChange={handleChange}
-                                        placeholder="John Doe"
+                                        // placeholder="John Doe"
                                         style={{ fontFamily: "var(--font-roboto)" }}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder-gray-400 text-gray-900"
                                     />
@@ -81,7 +81,7 @@ export default function Contact() {
                                         required
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        placeholder="+91 00000 00000"
+                                        // placeholder="+91 00000 00000"
                                         style={{ fontFamily: "var(--font-roboto)" }}
                                         className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder-gray-400 text-gray-900"
                                     />
